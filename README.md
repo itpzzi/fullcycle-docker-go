@@ -1,21 +1,23 @@
-Esse desafio é muito empolgante principalmente se você nunca trabalhou com a linguagem Go!
+# Desafio Full Cycle - Docker e Go Lang
 
-Você terá que publicar uma imagem no docker hub. Quando executarmos:
+Neste repositório está a solução do desafio Full Cycle, que consistiu em trabalhar com Docker e a linguagem Go.
 
-docker run <seu-user>/fullcycle
+## O que foi feito
 
-Temos que ter o seguinte resultado: Full Cycle Rocks!!
+1. **Desenvolvi um programa simples em Go** que imprime a mensagem:  
+   ```bash
+   Full Cycle Rocks!!
+   ```
+   Esse programa foi implementado para atender ao requisito do desafio.
 
-Se você perceber, essa imagem apenas realiza um print da mensagem como resultado final, logo, vale a pena dar uma conferida no próprio site da Go Lang para aprender como fazer um "olá mundo".
+2. **Otimizei a imagem Docker** para que tivesse menos de 2MB.  
+   Para isso, utilizei uma imagem "scratch" como base, garantindo que a imagem final fosse compacta e eficiente.
 
-Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o Docker Hub.
+3. **Publiquei a imagem no Docker Hub**, tornando-a acessível com o comando:  
+   ```bash
+   docker run itpzzi/fullcycle
+   ```
+   O link para a imagem publicada é:  
+   [Docker Hub - Full Cycle](https://hub.docker.com/repository/docker/itpzzi/fullcycle)
 
-3) A imagem de nosso projeto Go precisa ter menos de 2MB =)
-
-Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de arquivos em camadas, apresento uma imagem "raiz", talvez seja uma boa utilizá-la.
-
-Suba o projeto em um repositório Git remoto e coloque o link da imagem que subiu no Docker Hub.
-
-Compartilhe o link do repositório do Git remoto para corrigirmos seu projeto.
-
-Divirta-se!
+4. **Organizei o código neste repositório** para facilitar o entendimento e a reprodução do processo.
